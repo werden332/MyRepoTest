@@ -21,6 +21,8 @@ void setup() {
 }
 
 void loop() {    
+
+  Serial.print("Hello"); 
   Serial.print("Humidity air: "); 
   Serial.println(dht.readHumidity());
   Serial.print("Temperature air: ");
