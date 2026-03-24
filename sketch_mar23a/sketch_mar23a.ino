@@ -21,9 +21,8 @@ void setup() {
 }
 
 void loop() {
-   unsigned long currentMillis = millis();
-    if (currentMillis - previousMillis >= INTERVAL) {
-    previousMillis = currentMillis;
+   
+  Serial.print("Hello world"); 
   Serial.print("Humidity air: "); 
   Serial.println(dht.readHumidity());
   Serial.print("Temperature air: ");
