@@ -20,9 +20,9 @@ void setup() {
 
 }
 
-void loop() {
-   
-  Serial.print("Hello world"); 
+void loop() {    
+
+  Serial.print("Hello"); 
   Serial.print("Humidity air: "); 
   Serial.println(dht.readHumidity());
   Serial.print("Temperature air: ");
@@ -31,5 +31,4 @@ void loop() {
   Serial.println(analogRead(humid_soil));
   Serial.print("Light sensor: ");
   Serial.println(analogRead(light_data));
-  
 }
