@@ -20,10 +20,7 @@ void setup() {
 
 }
 
-void loop() {
-   unsigned long currentMillis = millis();
-    if (currentMillis - previousMillis >= INTERVAL) {
-    previousMillis = currentMillis;
+void loop() {    
   Serial.print("Humidity air: "); 
   Serial.println(dht.readHumidity());
   Serial.print("Temperature air: ");
@@ -32,5 +29,4 @@ void loop() {
   Serial.println(analogRead(humid_soil));
   Serial.print("Light sensor: ");
   Serial.println(analogRead(light_data));
-  
 }
